@@ -8,7 +8,7 @@ function Item ({ producto }) {
   return (
     <Col md={6} lg={3}>
       <Card>
-        <Card.Img variant="top" src={producto.thumbnail} />
+        <Card.Img variant="top" src={producto.image} />
         <Card.Body>
           <Card.Title>{producto.title}</Card.Title>
           <Card.Text>

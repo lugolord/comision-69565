@@ -4,7 +4,7 @@ import ItemCount from './ItemCount'
 function ItemDetail ({ detail }) {
   return (
     <div className='dsbfd'>
-      <p>{detail?.title}</p>
+      <p>{detail?.name}</p>
       <p>{detail?.description}</p>
       <p>$ {detail?.price}</p>
       <ItemCount product={detail} />

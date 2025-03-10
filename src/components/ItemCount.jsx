@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { useState, useContext } from 'react'
+import { useState } from 'react'
+import { useContext } from 'react'
 import { cartContext } from '../context/cartContext'
 
 function ItemCount ({ product }) {
@@ -14,9 +15,7 @@ function ItemCount ({ product }) {
     setCount(count - 1)
   }
 
-  const handleAddToCart = () => {
-    addToCart({...product, quantity: count})
-  }
+  const handleAddToCart = () => addToCart({...product, quantity: count})
 
   return ( 
     <div>
